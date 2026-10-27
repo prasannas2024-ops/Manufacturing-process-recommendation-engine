@@ -1,0 +1,1513 @@
+|--- cat__material_type_Plastic <= 0.50
+|   |--- cat__part_geometry_2 <= 0.50
+|   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |--- cat__material_type_Rubber <= 0.50
+|   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Titanium <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Titanium >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Titanium <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Titanium >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |--- cat__material_type_Titanium <= 0.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |--- cat__material_type_Titanium >  0.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |--- cat__material_type_Rubber >  0.50
+|   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |--- cat__material_type_Rubber <= 0.50
+|   |   |   |   |--- cat__material_type_Titanium <= 0.50
+|   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |--- cat__material_type_Titanium >  0.50
+|   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |--- cat__material_type_Rubber >  0.50
+|   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.00
+|   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  3.00
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |--- cat__part_geometry_2 >  0.50
+|   |   |--- num__design_status <= 1.50
+|   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.00
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  2.00
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |--- num__batch_size_cat <= 3.00
+|   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__batch_size_cat >  3.00
+|   |   |   |   |   |   |--- num__part_size <= 2.00
+|   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__part_size >  2.00
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |--- num__design_status >  1.50
+|   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |--- cat__material_type_Steel <= 0.50
+|   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |--- cat__material_type_Steel >  0.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |--- num__strength_level <= 2.00
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__strength_level >  2.00
+|   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- cat__material_type_Aluminum >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |--- class: Sheet_Metal
+|--- cat__material_type_Plastic >  0.50
+|   |--- num__part_size <= 2.50
+|   |   |--- num__strength_level <= 2.50
+|   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.00
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  2.00
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.00
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.00
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Investment_Casting
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |--- num__strength_level >  2.50
+|   |   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.00
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.00
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.00
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |--- num__batch_size_cat >  3.50
+|   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |--- num__part_size <= 1.50
+|   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |--- num__part_size >  1.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.00
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  2.00
+|   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_1 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- cat__part_geometry_1 >  0.50
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Sand_Casting
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__batch_size_cat >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |   |   |   |--- num__budget_per_part >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |   |--- class: SLS_3D_Printing
+|   |--- num__part_size >  2.50
+|   |   |--- num__batch_size_cat <= 3.50
+|   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 2.50
+|   |   |   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__design_status >  1.50
+|   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__budget_per_part >  2.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 1.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  1.50
+|   |   |   |   |   |   |   |   |--- num__tolerance_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: SLA_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__urgency_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__tolerance_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |--- num__strength_level <= 1.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 2.00
+|   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__budget_per_part >  2.00
+|   |   |   |   |   |   |   |--- class: Die_Casting
+|   |   |   |   |   |--- num__strength_level >  1.50
+|   |   |   |   |   |   |--- num__budget_per_part <= 1.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |--- num__budget_per_part >  1.50
+|   |   |   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |   |   |--- num__urgency_level <= 1.50
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: Vacuum_Casting
+|   |   |   |   |   |   |   |   |   |--- num__surface_finish >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |--- num__urgency_level >  1.50
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level <= 2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |   |   |   |   |   |--- num__strength_level >  2.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Forging
+|   |   |   |   |   |   |   |   |   |--- num__urgency_level >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |--- num__batch_size_cat <= 2.50
+|   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- num__batch_size_cat >  2.50
+|   |   |   |   |   |   |--- num__surface_finish <= 2.00
+|   |   |   |   |   |   |   |--- class: SLM_Metal_3D_Printing
+|   |   |   |   |   |   |--- num__surface_finish >  2.00
+|   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |--- num__batch_size_cat >  3.50
+|   |   |   |--- num__design_status <= 1.50
+|   |   |   |   |--- num__tolerance_level <= 2.50
+|   |   |   |   |   |--- cat__part_geometry_3 <= 0.50
+|   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- cat__part_geometry_3 >  0.50
+|   |   |   |   |   |   |--- num__urgency_level <= 2.00
+|   |   |   |   |   |   |   |--- class: Sheet_Metal
+|   |   |   |   |   |   |--- num__urgency_level >  2.00
+|   |   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |--- num__tolerance_level >  2.50
+|   |   |   |   |   |--- cat__part_geometry_4 <= 0.50
+|   |   |   |   |   |   |--- class: FDM_3D_Printing
+|   |   |   |   |   |--- cat__part_geometry_4 >  0.50
+|   |   |   |   |   |   |--- class: CNC_Machining
+|   |   |   |--- num__design_status >  1.50
+|   |   |   |   |--- cat__part_geometry_5 <= 0.50
+|   |   |   |   |   |--- class: Injection_Molding
+|   |   |   |   |--- cat__part_geometry_5 >  0.50
+|   |   |   |   |   |--- class: FDM_3D_Printing

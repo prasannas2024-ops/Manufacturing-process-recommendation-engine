@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card mb-4 border-primary">
+  <div class="card-body">
+    <div class="text-muted small">Top recommendation</div>
+    <h1 class="display-6">{{ top.name }}</h1>
+    <p class="lead">{{ top.description }}</p>
+    <div class="small mb-1">Model score: <strong>{{ "%.1f"|format(top.score) }}%</strong></div>
+    <div class="progress" role="progressbar" aria-label="Model score" aria-valuenow="{{ top.score }}" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: {{ top.score }}%"></div>
+    </div>
+  </div>
+</div>
+
+<h2 class="h5">Other options</h2>
+<div class="table-responsive mb-4">
+  <table class="table">
+    <thead><tr><th>Rank</th><th>Process</th><th>Model score</th></tr></thead>
+    <tbody>
+    {% for o in others %}
+      <tr><td>{{ loop.index + 1 }}</td>
+          <td>{{ o.name }}<div class="text-muted small">{{ o.description }}</div></td>
+          <td>{{ "%.1f"|format(o.score) }}%</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2 class="h5">Your answers</h2>
+<ul class="list-group mb-4">
+  {% for q, a in answers %}
+  <li class="list-group-item d-flex justify-content-between flex-wrap"><span>{{ q }}</span><strong>{{ a }}</strong></li>
+  {% endfor %}
+</ul>
+
+<form method="post" action="/feedback" class="mb-3">
+  <input type="hidden" name="session_id" value="{{ session_id }}">
+  <span class="me-2">Was this useful?</span>
+  <button class="btn btn-outline-success" name="useful" value="yes">Yes</button>
+  <button class="btn btn-outline-secondary" name="useful" value="no">No</button>
+</form>
+<a href="/" class="btn btn-link ps-0">Start over</a>
+
+<p class="text-muted small mt-4">Model scores come from a model trained on rule-based sample data. Use them as guidance, not as a quotation.</p>
+{% endblock %}

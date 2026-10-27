@@ -1,0 +1,5 @@
+model,cv_macro_f1,test_accuracy,test_macro_f1,agreement_with_rules
+majority_baseline,0.0132,0.0865,0.0133,0.0875
+decision_tree,0.8098,0.8219,0.8213,0.8906
+random_forest,0.8894,0.8906,0.8904,0.9667
+logistic_regression,0.7655,0.7698,0.7685,0.8344
